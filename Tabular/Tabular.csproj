@@ -46,12 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerInfo.cs" />
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Orders.cs" />
     <Compile Include="ProductView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,12 +67,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="SalesOrder.cs" />
     <Compile Include="SalesView.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SalesView.Designer.cs">
       <DependentUpon>SalesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="SomeObject.cs" />
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>

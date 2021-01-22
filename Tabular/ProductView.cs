@@ -13,6 +13,7 @@ namespace Tabular
     public partial class ProductView : UserControl
     {
         public EventHandler Saved;
+        public CustomerInfo _customerInfo;
 
         public ProductView()
         {
@@ -23,6 +24,14 @@ namespace Tabular
         {
             Parent.BackgroundImage = SystemIcons.Exclamation.ToBitmap();
             Saved?.Invoke(this, new EventArgs());
+        }
+
+        private void ProductView_Load(object sender, EventArgs e)
+        {
+            var main = (MainPage)this.Parent;
+            _customerInfo = main.Customer;
+            CustNo.Text = _customerInfo.CustomerNumber;
+            CustName.Text = _customerInfo.CustomerName;
         }
     }
 }

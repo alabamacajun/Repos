@@ -33,6 +33,8 @@
             this.CustName = new System.Windows.Forms.TextBox();
             this.Namelabel = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.SalesDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // CustNo
@@ -78,10 +80,19 @@
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // SalesDataGridView
+            // 
+            this.SalesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SalesDataGridView.Location = new System.Drawing.Point(3, 85);
+            this.SalesDataGridView.Name = "SalesDataGridView";
+            this.SalesDataGridView.Size = new System.Drawing.Size(333, 150);
+            this.SalesDataGridView.TabIndex = 8;
+            // 
             // SalesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.SalesDataGridView);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.CustName);
             this.Controls.Add(this.Namelabel);
@@ -89,6 +100,7 @@
             this.Controls.Add(this.CustomerNoLabel);
             this.Name = "SalesView";
             this.Size = new System.Drawing.Size(339, 238);
+            ((System.ComponentModel.ISupportInitialize)(this.SalesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +113,6 @@
         private System.Windows.Forms.TextBox CustName;
         private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.DataGridView SalesDataGridView;
     }
 }

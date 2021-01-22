@@ -13,8 +13,13 @@ namespace Tabular
     public partial class MainPage : Form
     {
         private ImageList _iconImages;
+
+        public CustomerInfo Customer;
+
         public MainPage()
         {
+            Customer = new CustomerInfo();
+
             InitializeComponent();
             _iconImages = new ImageList();
             _iconImages.TransparentColor = Color.Blue;
